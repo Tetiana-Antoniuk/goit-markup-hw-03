@@ -172,6 +172,8 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding: 10px 24px;
 }
 .button-primary:hover {
   cursor: pointer;
@@ -183,6 +185,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+  border-radius: 4px;
+  padding: 6px 22px;
 }
 .button-secondary:hover,
 .button-secondary:focus {
@@ -190,14 +194,24 @@ body {
   background-color: var(--actent-color);
   cursor: pointer;
 }
+.work-examples {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .work-example {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin: 0;
+  margin-bottom: 4px;
 }
 .work-text {
   font-size: 16px;
   line-height: 1.88;
+  margin: 0;
+}
+.work-image {
+  margin-bottom: 20px;
 }
