@@ -273,6 +273,7 @@ display: flex;
 flex-wrap: wrap;
 }
 .customers-icon {
+  height: 92px;
   display: flex;
   width: calc((100% - 150px) / 6);
   border: 1px solid #AFB1B8;
@@ -284,9 +285,18 @@ justify-content: center;
 .customers-icon:nth-child(6) {
   margin-right: 0;
 }
+.customers-icon:hover, 
+.customers-icon:focus {
+  border: 1px solid var(--actent-color);
+}
+.customers-icon:hover > .customers-icon-logo, 
+.customers-icon:focus > .customers-icon-logo {
+  fill: var(--actent-color);
+}
 .customers-icon-logo {
   width: 106px;
   height: 60px;
+  fill: var(--social-networks);
 }
 /* hero */
 .hero-title {
@@ -348,6 +358,43 @@ color: var(--primary-text-color);
   cursor: pointer;
   color: var(--actent-color);
 }
+.social-networks-footer {
+  margin-left: 70px;
+}
+.networks-title {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 20px;
+}
+.networks-footer {
+  display: flex;
+}
+.networks-footer-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.networks-footer-icon:hover,
+.networks-footer-icon:focus {
+background-color: var(--actent-color);
+}
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--white-color);
+}
+.adress-footer {
+  display: flex;
+}
+
+/* button */
 .button-primary {
   color: var(--white-color);
   background-color: var(--actent-color);
@@ -376,6 +423,7 @@ color: var(--primary-text-color);
   line-height: 1.63;
   border-radius: 4px;
   padding: 6px 22px;
+  border: none;
 }
 .button-secondary-wrapper {
   margin-right: 8px;
@@ -389,7 +437,10 @@ color: var(--primary-text-color);
   color: var(--white-color);
   background-color: var(--actent-color);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+/* portfolio */
 .work {
   display: flex;
   flex-wrap: wrap;
@@ -432,4 +483,8 @@ margin-right: 0;
 }
 .work-description {
   border: 1px solid var(--boarder-color);
+}
+.work-description:hover,
+.work-description:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
