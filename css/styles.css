@@ -563,4 +563,19 @@ margin-right: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 5;
+}
+.button-modal {
+  position: absolute;
+  border: none;
+right: 8px;
+top: 8px;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--white-color);
+}
+.button-modal:hover {
+  cursor: pointer;
 }
